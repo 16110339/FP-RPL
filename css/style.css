@@ -41,11 +41,9 @@ h1{
 }
 
 .kotak_login{
-	width: 350px;
-	height: 350px;
-	background: 255, 140, 0;
+	width: 400px;
+	height: 430px;
 	background:rgba(0,0,0,0.4); 
-	/*meletakkan form ke tengah*/
 	margin: 80px auto;
 	padding-top: 30px;
 	padding-left: 20px;
@@ -103,4 +101,3 @@ label{
 	/*membuat semua huruf menjadi kapital*/
 	text-transform: uppercase;
 }
-

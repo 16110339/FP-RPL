@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 ?>
 
@@ -16,27 +16,27 @@ require_once "koneksi.php";
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
     <div id="wrapper" class="wrapper-content">
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">ADMIN</a>
-                </li>
-                <li><i class="fas fa-columns"></i><a href="home_index.php">DashBoard</a></li>
-                <li><i class="far fa-envelope-open"></i><a href="">Kotak Pesan</a></li>
-                <li><i class="fas fa-calendar"></i><a href="">Info Terbaru</a></li>
-                <li><i class="fas fa-book"></i><a href="">E-Learning</a></li>
-                <li><i class="fas fa-calendar-alt"></i><a href="info_kegiatan.php">Informasi Kegiatan</a></li>
-                <li><i class="fas fa-share-square"></i><a href="insert_kegiatan.php">Posting Kegiatan</a></li>
-                <li><i class="fas fa-sign-out-alt"></i><a href="logout.php">Keluar</a></li>
-            </ul>
-        </div>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">ADMIN</a>
+            </li>
+            <li><i class="fas fa-columns"></i><a href="home_index.php">DashBoard</a></li>
+            <li><i class="far fa-envelope-open"></i><a href="">Kotak Pesan</a></li>
+            <li><i class="fas fa-book"></i><a href="elearning.php">E-Learning</a></li>
+            <li><i class="fas fa-calendar-alt"></i><a href="info_kegiatan.php">Informasi Kegiatan</a></li>
+            <li><i class="fas fa-clipboard-list"></i><a href="peraturan_kampus.php">Informasi Peraturan</a></li>
+            <li><i class="fas fa-share-square"></i><a href="insert_kegiatan.php">Posting Kegiatan</a></li>
+            <li><i class="fas fa-sign-out-alt"></i><a href="logout.php">Keluar</a></li>
+        </ul>
+    </div>
         <div id="page-content-wrapper">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -52,7 +52,7 @@ require_once "koneksi.php";
                     <div class="col-lg-12">
                         <h2>Posting Kegiatan</h2>
                         <div class="content">
-                            <form class="" action="cek/upload.php" method="POST" enctype="multipart/form-data">
+                            <form class="" action="../cek/upload.php" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <input type="hidden" name="size" value="1000000">
                             </div>
@@ -72,7 +72,7 @@ require_once "koneksi.php";
                                     <label for="example-date-input">Pilih Tanggal Kegiatan:</label>
                                     <input class="form-control col-md-4" type="date" value="2018-08-19" id="example-date-input" name="tanggal_kegiatan">
                                 </div>
-                                <input class="btn btn-primary" type="submit" name="upload" value="Posting">
+                                <input class="btn btn-outline-success" type="submit" name="upload" value="Posting">
                             </form>
                         </div>
                     </div>

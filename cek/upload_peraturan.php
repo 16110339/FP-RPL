@@ -17,7 +17,7 @@ VALUES ('$namaperaturan','$namafile')";
 $hasil = mysqli_query($koneksi, $peraturan);
 
 if(move_uploaded_file($_FILES['document']['tmp_name'], $target)) {
-    header("location:peraturan_kampus.php");
+    header("location:../admin/peraturan_kampus.php");
 }else{
     
 }

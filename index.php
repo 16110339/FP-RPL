@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Welcome</title>	
 	<link rel="stylesheet" href="font/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -25,6 +27,9 @@
 				</div>
 				<div class="tombol_link">
 						<a class="link" href="login_admin.php" ><h2>Masuk Sebagai Admin<h2></a>
+				</div>
+				<div class="tombol_link">
+						<a class="link" href="login_dosen.php" ><h2>Masuk Sebagai Dosen<h2></a>
 				</div>
 			</div>
 		</form>

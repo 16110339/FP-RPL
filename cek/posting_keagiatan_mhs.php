@@ -19,7 +19,7 @@ VALUES ('$namakegiatan','$namagambar','$isikegiatan','$tanggalkegiatan')";
 $hasil = mysqli_query($koneksi, $gambar) or die(mysql_error());
 
 if(move_uploaded_file($_FILES['nama_gambar']['tmp_name'], $target)) {
-    header("location:../admin/info_kegiatan.php");
+    header("location:../mahasiswa/tampilkan_kegiatan.php");
 }else{
     
 }

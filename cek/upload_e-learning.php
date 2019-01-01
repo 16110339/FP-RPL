@@ -21,7 +21,7 @@ VALUES ('$namaelearning','$dosen','$matakuliah','$semester','$tanggalupload','$n
 $hasil = mysqli_query($koneksi, $elearning);
 
 if(move_uploaded_file($_FILES['nama_file']['tmp_name'], $target)) {
-    header("location:../e-learning.php");
+    header("location:../admin/elearning.php");
 }else{
     
 }
